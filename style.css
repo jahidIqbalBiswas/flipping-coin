@@ -1,0 +1,66 @@
+* {
+    box-shadow: none !important;
+}
+
+.coin {
+    width: 130px;
+    height: 130px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.coin-animate {
+    animation-name: toss;
+    animation-duration: .3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.myAlert {
+    margin: 20px auto 20px auto;
+}
+
+@keyframes toss {
+    0% {
+        border: 1px solid rgb(0, 0, 0);
+        background: rgb(37, 37, 37);
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    25% {
+        background: rgb(121, 3, 32);
+        transform: rotateX(180deg);
+        -webkit-transform: rotateX(180deg);
+        -moz-transform: rotateX(180deg);
+        -ms-transform: rotateX(180deg);
+        -o-transform: rotateX(180deg);
+    }
+    50% {
+        background: rgb(19, 148, 2);
+        transform: rotateY(-280deg);
+        -webkit-transform: rotateY(-280deg);
+        -moz-transform: rotateY(-280deg);
+        -ms-transform: rotateY(-280deg);
+        -o-transform: rotateY(-280deg);
+    }
+    75% {
+        background: rgb(1, 92, 95);
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+    }
+    100% {
+        background: rgb(197, 130, 5);
+        transform: rotateX(-280deg);
+        -webkit-transform: rotateX(-280deg);
+        -moz-transform: rotateX(-280deg);
+        -ms-transform: rotateX(-280deg);
+        -o-transform: rotateX(-280deg);
+    }
+}
